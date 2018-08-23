@@ -49,19 +49,10 @@
           <div id="navbarSupportedContent" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active"><a href="{{route("index")}}" class="nav-link">Home <span class="sr-only">(current)</span></a></li>
-                    @if(Auth::guard('applicant')->check())
-                    <li class="nav-item"><a href="{{route("applicant.logout")}}" class="nav-link">Logout({{Auth::guard('applicant')->user()->fullname}})</a></li>
+                    @if(Auth::guard()->check())
+                    <li class="nav-item"><a href="{{route("applicant.logout")}}" class="nav-link">Logout({{Auth::user()->fullname}})</a></li>
                     @else
-                        <li class="nav-item dropdown">
-                            <a id="clientZone" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">
-                                Login
-                            </a>
-                            <div aria-labelledby="clientZone" class="dropdown-menu">
-                                <a href="{{route("applicant.login")}}" class="dropdown-item">Login</a>
-        <!--                        <a href="client-dashboard.html" class="dropdown-item">Dashboard</a>-->
-                                <a href="{{route("applicant.register")}}" class="dropdown-item">Register</a>
-                            </div>
-                        </li>
+                        <li class="nav-item"><a href="{{url("admin/login")}}" class='nav-link'>Login</a></li>
                     @endif
                 <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
                 <li class="nav-item"><a href="about.html" class="nav-link">FAQ</a></li>

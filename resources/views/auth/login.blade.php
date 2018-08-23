@@ -1,7 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('content')
-@include("partials._section", ["action" => "Existing User - Login"])
+@include("partials._section", ["action" => "ADMIN - Login"])
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
