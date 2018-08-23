@@ -1,0 +1,42 @@
+/* your styles go here */
+.navbar{
+    background: #fff;
+}
+.navbar ul.navbar-nav>li>a:not(.navbar-btn) {
+    color: #2B7551;
+}
+.btn-outline-light {
+    color: #2B7551;
+    border-color: #2B7551;
+}
+.btn-outline-light:focus {
+    background: #2B7551;
+    color: #fff !important;
+}
+.job-form-section.job-form-section--compressed {
+    padding: 70px;
+    margin-bottom: 50px;
+}
+.pt-4, .py-4 {
+    padding-top: 0px !important;
+}
+.footer__block {
+    background: #363839;
+}
+.footer__copyright{
+    background: #282a2b;
+}
+.card{
+    margin: 40px 0px 100px 0px;
+}
+section {
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.sub-header{
+    padding-bottom: 0px;
+}
+.job-form-section.job-form-section--image {
+    background: center center url(images/bg2.jpg) no-repeat;
+    background-size: cover;
+}
