@@ -40,3 +40,39 @@ section {
     background: center center url(images/bg2.jpg) no-repeat;
     background-size: cover;
 }
+/**Dashboard Statbox Widget**/
+.statbox{
+    background:#fff;
+    margin:0 0 30px;
+    border:solid 1px #ccc;
+    padding: 25px 15px;
+    box-shadow: 0px 5px 25px 0px rgba(0,0,0,.04);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,.04);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,.04);
+}
+.statbox .title, .statbox .value {
+    text-align: right;
+    padding-right: 3px;
+}
+.statbox .title {
+    color: #2B7551;
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.statbox .title+.value {
+    margin-top: -3px;
+}
+.statbox .title, .statbox .value {
+    text-align: right;
+    padding-right: 3px;
+}
+.statbox .value {
+    font-size: 20px;
+    font-weight: 600;
+}
+.statbox .visual {
+    padding: 15px;
+    float:left;
+}

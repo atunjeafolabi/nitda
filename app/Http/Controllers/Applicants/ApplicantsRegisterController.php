@@ -94,6 +94,7 @@ class ApplicantsRegisterController extends Controller
 //        $this->guard('applicant')->login($user);
         
         //Send email to verification email to applicant
+        
         //Display Success Page
         return "Registered Successfully";
     }

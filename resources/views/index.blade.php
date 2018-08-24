@@ -85,121 +85,6 @@
             </div>
           </div>
         </div>
-        <div class="job-listing  ">
-          <div class="row">
-            <div class="col-md-12 col-lg-6">
-              <div class="row">
-                <div class="col-2"><img src="../../../d19m59y37dris4.cloudfront.net/jobs/2-0-1/img/company-2.png" alt="Ipsioou " class="img-fluid"></div>
-                <div class="col-10">
-                  <h4 class="job__title"><a href="detail.html">Webdesigner</a></h4>
-                  <p class="job__company">
-
-                    Ipsioou
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-10 col-md-3 col-lg-2 ml-auto"><i class="fa fa-map-marker job__location"></i>San Francisco</div>
-            <div class="col-10 col-md-3 col-lg-3 ml-auto">
-              <p>Posted 5 days ago</p>
-            </div>
-            <div class="col-sm-12 col-md-2 col-lg-1">
-              <div class="job__star"><a href="#" data-toggle="tooltip" data-placement="top" title="Save to favourites" class="job__star__link"><i class="fa fa-star"></i></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="job-listing  ">
-          <div class="row">
-            <div class="col-md-12 col-lg-6">
-              <div class="row">
-                <div class="col-2"><img src="../../../d19m59y37dris4.cloudfront.net/jobs/2-0-1/img/company-4.png" alt="ShareBoardd " class="img-fluid"></div>
-                <div class="col-10">
-                  <h4 class="job__title"><a href="detail.html">Team Leader</a></h4>
-                  <p class="job__company">
-
-                    ShareBoardd
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-10 col-md-3 col-lg-2 ml-auto"><i class="fa fa-map-marker job__location"></i>Palo Alto</div>
-            <div class="col-10 col-md-3 col-lg-3 ml-auto">
-              <p>Posted 10 days ago</p>
-            </div>
-            <div class="col-sm-12 col-md-2 col-lg-1">
-              <div class="job__star"><a href="#" data-toggle="tooltip" data-placement="top" title="Save to favourites" class="job__star__link"><i class="fa fa-star"></i></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="job-listing  ">
-          <div class="row">
-            <div class="col-md-12 col-lg-6">
-              <div class="row">
-                <div class="col-2"><img src="../../../d19m59y37dris4.cloudfront.net/jobs/2-0-1/img/company-4.png" alt="ShareBoardd " class="img-fluid"></div>
-                <div class="col-10">
-                  <h4 class="job__title"><a href="detail.html">Software Engineer</a></h4>
-                  <p class="job__company">
-
-                    ShareBoardd
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-10 col-md-3 col-lg-2 ml-auto"><i class="fa fa-map-marker job__location"></i>Palo Alto</div>
-            <div class="col-10 col-md-3 col-lg-3 ml-auto">
-              <p>Posted 14 days ago</p>
-            </div>
-            <div class="col-sm-12 col-md-2 col-lg-1">
-              <div class="job__star"><a href="#" data-toggle="tooltip" data-placement="top" title="Save to favourites" class="job__star__link"><i class="fa fa-star"></i></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="job-listing  ">
-          <div class="row">
-            <div class="col-md-12 col-lg-6">
-              <div class="row">
-                <div class="col-2"><img src="../../../d19m59y37dris4.cloudfront.net/jobs/2-0-1/img/company-3.png" alt="Bootstrapious " class="img-fluid"></div>
-                <div class="col-10">
-                  <h4 class="job__title"><a href="detail.html">Front End developer</a></h4>
-                  <p class="job__company">
-
-                    Bootstrapious
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-10 col-md-3 col-lg-2 ml-auto"><i class="fa fa-map-marker job__location"></i>Palo Alto</div>
-            <div class="col-10 col-md-3 col-lg-3 ml-auto">
-              <p>Posted 10 days ago</p>
-            </div>
-            <div class="col-sm-12 col-md-2 col-lg-1">
-              <div class="job__star"><a href="#" data-toggle="tooltip" data-placement="top" title="Save to favourites" class="job__star__link"><i class="fa fa-star"></i></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="job-listing  ">
-          <div class="row">
-            <div class="col-md-12 col-lg-6">
-              <div class="row">
-                <div class="col-2"><img src="../../../d19m59y37dris4.cloudfront.net/jobs/2-0-1/img/company-2.png" alt="Ipsioou " class="img-fluid"></div>
-                <div class="col-10">
-                  <h4 class="job__title"><a href="detail.html">Webdesigner</a></h4>
-                  <p class="job__company">
-
-                    Ipsioou
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-10 col-md-3 col-lg-2 ml-auto"><i class="fa fa-map-marker job__location"></i>San Francisco</div>
-            <div class="col-10 col-md-3 col-lg-3 ml-auto">
-              <p>Posted 5 days ago</p>
-            </div>
-            <div class="col-sm-12 col-md-2 col-lg-1">
-              <div class="job__star"><a href="#" data-toggle="tooltip" data-placement="top" title="Save to favourites" class="job__star__link"><i class="fa fa-star"></i></a></div>
-            </div>
-          </div>
-        </div>
         <div class="job-listing  job-listing--last">
           <div class="row">
             <div class="col-md-12 col-lg-6">
@@ -240,7 +125,7 @@
     </section>
     <section class="bg-light-gray">
       <div class="container">
-        <h3 class="heading">Featured jobs</h3>
+        <h3 class="heading">JOB CATEGORIES</h3>
         <div class="row featured align-items-stretch">
           <div class="col-lg-4 mb-5 mb-lg-0">
             <div class="box-image-text bg-visible full-height">
@@ -249,9 +134,13 @@
                   <div class="bg"></div>
                   <div class="logo"><img src="../../../d19m59y37dris4.cloudfront.net/jobs/2-0-1/img/company-1.png" alt="" style="max-width: 80px;"></div></a></div>
               <div class="content">
-                <h5><a href="detail.html">Software Engineer</a></h5>
-                <p class="featured__details">  <i class="fa fa-map-marker job__location"></i>San Francisco<span class="badge featured-badge badge-success">Full Time</span></p>
-                <p>Advantage old had otherwise sincerity dependent additions. It in adapted natural hastily is justice. Six draw you him full not mean evil. Prepare garrets it expense windows shewing do an.</p>
+                <h5><a href="detail.html">Graduate Trainee</a></h5>
+                <p class="featured__details"><span class="badge featured-badge badge-success">0-2 Years Work Experience</span></p>
+                <p>
+                    0-2 Years Work Experience
+                    University Graduate(B.Sc, M.Sc)
+                    NYSC must have been completed
+                </p>
               </div>
             </div>
           </div>
@@ -262,9 +151,13 @@
                   <div class="bg"></div>
                   <div class="logo"><img src="../../../d19m59y37dris4.cloudfront.net/jobs/2-0-1/img/company-3.png" alt="" style="max-width: 80px;"></div></a></div>
               <div class="content">
-                <h5><a href="detail.html">Customer support</a></h5>
-                <p class="featured__details">  <i class="fa fa-map-marker job__location"></i>Palo Alto<span class="badge featured-badge badge-success">Full Time</span></p>
-                <p>Am terminated it excellence invitation projection as. She graceful shy believed distance use nay. Lively is people so basket ladies window expect. </p>
+                <h5><a href="detail.html">Experienced Hire</a></h5>
+                <p class="featured__details"><span class="badge featured-badge badge-success">4-6 Years Work Experience</span></p>
+                <p>
+                    4-6 Years Work Experience
+                    University Graduate(B.Sc, M.Sc)
+                    NYSC must have been completed
+                </p>
               </div>
             </div>
           </div>
@@ -275,9 +168,11 @@
                   <div class="bg"></div>
                   <div class="logo"><img src="../../../d19m59y37dris4.cloudfront.net/jobs/2-0-1/img/company-2.png" alt="" style="max-width: 80px;"></div></a></div>
               <div class="content">
-                <h5><a href="detail.html">Graphic designer</a></h5>
-                <p class="featured__details">  <i class="fa fa-map-marker job__location"></i>San Francisco<span class="badge featured-badge badge-dark">Part Time</span></p>
-                <p>Fifth abundantly made Give sixth hath. Cattle creature i be dont them behold green moved fowl Moved life us beast good yielding. Have bring.</p>
+                <h5><a href="detail.html">Other Job Openings</a></h5>
+                <p class="featured__details"><span class="badge featured-badge badge-dark">Others</span></p>
+                <p>
+                    Search and apply for other available job openings in NITDA
+                </p>
               </div>
             </div>
           </div>

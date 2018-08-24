@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+@include('partials._section', ['action' => 'Recover Your Password'])
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
