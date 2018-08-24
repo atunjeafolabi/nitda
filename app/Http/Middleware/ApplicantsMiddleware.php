@@ -21,6 +21,14 @@ class ApplicantsMiddleware
             return redirect(route('applicant.login'));
         }
         
+        if(Auth::guard($guard)->user()->status == 0) {
+            
+            Auth::guard($guard)->logout();
+            $request->session()->invalidate();
+            $request->session()->flash('status_info', 'You have not confirmed your account. Please Check Your Email And Click on the Link Sent To You.');
+            return redirect()->back();
+        }
+        
         return $next($request);
     }
 }

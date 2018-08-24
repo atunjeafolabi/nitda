@@ -27,6 +27,8 @@ Route::group(['middleware' => ['web']], function () {
         Route::post('password/email', 'Applicants\ApplicantsForgotPasswordController@sendResetLinkEmail')->name('applicant.password.email');
         Route::get('password/reset/{token}', 'Applicants\ApplicantsResetPasswordController@showResetForm')->name('applicant.password.reset');
         Route::post('password/reset', 'Applicants\ApplicantsResetPasswordController@reset');
+        //Email Verification link sent to applicant after registration
+        Route::get('email/verify/{email_activation_token}', 'Applicants\ApplicantsRegisterController@verifyEmail')->name('applicant.email.verify');
     });    
 
     //Authentication for applicants via applicants middleware

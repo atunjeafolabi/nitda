@@ -76,3 +76,42 @@ section {
     padding: 15px;
     float:left;
 }
+.item-block {
+    display: block;
+    margin-top: 30px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+    transition: .3s ease-in-out;
+}
+.item-block header img {
+    width: 64px;
+    margin-right: 30px;
+    float: left;
+}
+.item-block header h4, .item-block header h5, .item-block header h6 {
+    font-family: Open Sans,sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+.item-block header .hgroup {
+    display: inline-block;
+}
+.item-block header {
+    padding: 20px 30px;
+    border-bottom: 1px solid #f6f6f6;
+}
+.item-block header h5 {
+    font-size: 17px;
+    margin-top: 6px;
+    color: #96a2b2;
+}
+.item-block header .location, .item-block header .rate {
+    display: block;
+    color: #96a2b2;
+    line-height: 35px;
+}
+.item-block header .header-meta {
+    float: right;
+    text-align: right;
+}

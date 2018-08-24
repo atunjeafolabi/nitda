@@ -18,7 +18,7 @@ class GuestApplicantsMiddleware
     public function handle($request, Closure $next, $guard='applicant')
     {
         if (Auth::guard($guard)->check()) {
-            return redirect()->route('applicant.dashboard');return $next($request);
+            return redirect()->route('applicant.dashboard');
         }
         
         return $next($request);

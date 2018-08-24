@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use App\Notifications\ApplicantResetPasswordNotification;
 
 class Applicant extends Authenticatable
 {
@@ -15,7 +16,7 @@ class Applicant extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'firstname', 'lastname', 'email', 'password',
+        'firstname', 'lastname', 'email', 'password', 'email_activation_token', 'confirmed_at', 'status',
     ];
     
     public $guards = 'applicant';
@@ -26,10 +27,21 @@ class Applicant extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password', 'remember_token', 'email_activation_token',
     ];
     public function getFullNameAttribute()
     {
          return	$this->firstname.' '.$this->lastname;
+    }
+
+    /**
+     * Send the password reset notification.
+     *
+     * @param  string  $token
+     * @return void
+     */
+    public function sendPasswordResetNotification($token)
+    {
+        $this->notify(new ApplicantResetPasswordNotification($token));
     }
 }

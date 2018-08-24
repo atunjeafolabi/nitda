@@ -64,17 +64,17 @@ class ApplicantsLoginController extends Controller
     }
 
     /**
-     * Attempt to log the user into the application.
+     * Get the needed authorization credentials from the request.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return bool
+     * @return array
      */
-//    protected function attemptLogin(Request $request)
-//    {
-//        return $this->guard()->attempt(
-//            $this->credentials($request), $request->filled('remember')
-//        );
-//    }
+    protected function credentials(Request $request)
+    {
+        //add status => 1 to array
+//        return array_add($request->only($this->username(), 'password'), 'status', 1);
+        return $request->only($this->username(), 'password');
+    }
 
     /**
      * Log the user out of the application.

@@ -9,6 +9,19 @@
                 <div class="card-header">{{ __('Login') }}</div>
 
                 <div class="card-body">
+                    
+                        @if(!empty(session('status_info')))
+                            <div class="alert alert-danger" role="alert">
+                                {{session('status_info')}}
+                            </div>
+                        @endif
+                        
+                        @if(!empty(session('verify_email_status')))
+                            <div class="alert alert-success" role="alert">
+                                {{session('verify_email_status')}}
+                            </div>   
+                        @endif
+                    
                     <form method="POST" action="{{ route('applicant.login') }}" aria-label="{{ __('Login') }}">
                         @csrf
 
