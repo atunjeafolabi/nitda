@@ -36,7 +36,13 @@ Route::group(['middleware' => ['web']], function () {
     Route::group(['middleware' => ['authenticatedApplicants']], function () {
 
         Route::get('/applicant/dashboard','Applicants\ApplicantsDashboardController@index')->name('applicant.dashboard');
-        //    Route::get('/applicant', 'AdminController@index');
+        //Profile routes
+        Route::get('/applicant/profile','Applicants\ProfileController@index')->name('applicant.profile.index');
+        Route::get('/applicant/profile/edit','Applicants\ProfileController@showEditForm')->name('applicant.profile.edit');
+        Route::post('/applicant/profile/edit','Applicants\ProfileController@edit')->name('applicant.profile.edit');
+        Route::get('/applicant/profile/change-password','Applicants\ProfileController@showChangePasswordForm')->name('applicant.profile.changePassword');
+        Route::post('/applicant/profile/change-password','Applicants\ProfileController@changePassword')->name('applicant.profile.changePassword');
+        
         Route::get('/applicant/logout','Applicants\ApplicantsLoginController@logout')->name('applicant.logout');
     });
     

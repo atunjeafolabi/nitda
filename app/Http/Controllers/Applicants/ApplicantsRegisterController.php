@@ -135,16 +135,17 @@ class ApplicantsRegisterController extends Controller
 
                 if($applicant->save()){
                    $message = 'Congrats! Email Confirmed Successfully. You can now Login';
+                   session()->flash('success-msg', $message);
                 }
             }else{
                 $message = 'This Email is already Confirmed. Login Below';
+                session()->flash('success-msg', $message);
             }
             
         }else{
             $message = 'Invalid Email Activation Token!';
+            session()->flash('danger-msg', $message);
         }
-        
-        session()->flash('verify_email_status', $message);
         
         return redirect()->route('applicant.login');
     }

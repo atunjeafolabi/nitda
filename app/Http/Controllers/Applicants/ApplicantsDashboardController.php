@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers\Applicants;
 
+use App\Applicant;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class ApplicantsDashboardController extends Controller
 {
@@ -13,6 +15,10 @@ class ApplicantsDashboardController extends Controller
      */
     public function index()
     {
-        return view('applicants.dashboard');
+        $id = Auth::guard('applicant')->user()->id;
+        
+        $applicant = Applicant::find($id)->first();
+        
+        return view('applicants.dashboard')->with(['applicant', $applicant]);
     }
 }

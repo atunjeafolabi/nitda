@@ -72,11 +72,11 @@
             <div class="widget">
                 <div class="widget-header">
                     <h4><i class="icon-reorder"></i>Basic Data</h4>
-
+                    @include('partials._alert')
                     <div class="toolbar no-padding">
                         <div class="btn-group">
                             <span class="btn btn-xs btn-success">
-                                <a href="http://careers.ikejaelectric.com/ie/applicants/my-profile/edit" id="edit-profile" class='text-white'>
+                                <a href="{{route('applicant.profile.edit')}}" id="edit-profile" class='text-white'>
                                     <i class="fa fa-pencil-square-o"></i> Edit Data</a></span>
                         </div>
                     </div>
@@ -91,9 +91,9 @@
                             <td><strong>Other Names</strong></td>
                         </tr>
                         <tr>
-                            <td style="color: #818a91;">AFOLABI</td>
-                            <td style="color: #818a91;">OLATUNJI</td>
-                            <td style="color: #818a91;">IBUKUN</td>
+                            <td class='text-muted'>AFOLABI</td>
+                            <td class='text-muted'>OLATUNJI</td>
+                            <td class='text-muted'>IBUKUN</td>
                         </tr>
                         <tr>
                             <td><strong>Sex</strong></td>
