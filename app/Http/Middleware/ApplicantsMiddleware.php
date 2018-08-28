@@ -25,7 +25,7 @@ class ApplicantsMiddleware
             
             Auth::guard($guard)->logout();
             $request->session()->invalidate();
-            $request->session()->flash('status_info', 'You have not confirmed your account. Please Check Your Email And Click on the Link Sent To You.');
+            $request->session()->flash('danger-msg', 'You have not confirmed your account. Please Check Your Email And Click on the Link Sent To You.');
             return redirect()->back();
         }
         

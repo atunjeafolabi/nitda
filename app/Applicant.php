@@ -16,7 +16,7 @@ class Applicant extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'firstname', 'lastname', 'email', 'password', 'email_activation_token', 'confirmed_at', 'status',
+        'firstname', 'lastname', 'othername', 'sex', 'origin_lga', 'origin_state', 'dob', 'phone', 'address_of_residence', 'lga_of_residence', 'state_of_residence', 'email', 'password', 'email_activation_token', 'confirmed_at', 'status',
     ];
     
     public $guards = 'applicant';
@@ -43,5 +43,25 @@ class Applicant extends Authenticatable
     public function sendPasswordResetNotification($token)
     {
         $this->notify(new ApplicantResetPasswordNotification($token));
+    }
+
+    public function stateOfResidence()
+    {
+        return $this->belongsTo('App\State', 'state_of_residence');
+    }
+    
+    public function lgaOfResidence()
+    {
+        return $this->belongsTo('App\Lga', 'lga_of_residence');
+    }
+    
+    public function stateOfOrigin()
+    {
+        return $this->belongsTo('App\State', 'origin_state');
+    }    
+    
+    public function lgaOfOrigin()
+    {
+        return $this->belongsTo('App\Lga', 'origin_lga');
     }
 }

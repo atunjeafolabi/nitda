@@ -86,24 +86,24 @@
 
                         <tbody>
                         <tr>
-                            <td><strong>Last Name</strong></td>
-                            <td><strong>First Name</strong></td>
-                            <td><strong>Other Names</strong></td>
+                            <th>Last Name</th>
+                            <th>First Name</th>
+                            <th>Other Names</th>
                         </tr>
                         <tr>
-                            <td class='text-muted'>AFOLABI</td>
-                            <td class='text-muted'>OLATUNJI</td>
+                            <td class='text-muted'>{{$applicant->lastname}}</td>
+                            <td class='text-muted'>{{$applicant->firstname}}</td>
                             <td class='text-muted'>IBUKUN</td>
                         </tr>
                         <tr>
                             <td><strong>Sex</strong></td>
                             <td><strong>Date Of Birth</strong></td>
-                            <td><strong>Alt. Email</strong></td>
+                            <td></td>
                         </tr>
                         <tr>
-                            <td style="color: #818a91;">Male</td>
-                            <td style="color: #818a91;">08/11/1989</td>
-                            <td style="color: #818a91;"></td>
+                            <td class="text-muted">{{$applicant->sex}}</td>
+                            <td class="text-muted">{{$applicant->dob}}</td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td><strong>Phone No.</strong></td>
@@ -111,29 +111,19 @@
                             <td><strong>LGA</strong></td>
                         </tr>
                         <tr>
-                            <td style="color: #818a91;">07062415800</td>
-                            <td style="color: #818a91;"></td>
-                            <td style="color: #818a91;"></td>
+                            <td class="text-muted">{{$applicant->phone}}</td>
+                            <td class="text-muted">{{$applicant->stateOfResidence->name}}</td>
+                            <td class="text-muted">{{$applicant->lgaOfResidence->name}}</td>
                         </tr>
                         <tr>
-                            <td><strong>Country of Residence</strong></td>
+                            <th>Residential Address</th>
                             <td><strong>State of Residence</strong></td>
-                            <td><strong>City of Residence</strong></td>
+                            <td><strong>LGA of Residence</strong></td>
                         </tr>
                         <tr>
-                            <td style="color: #818a91;">Nigeria</td>
-                            <td style="color: #818a91;">Lagos</td>
-                            <td style="color: #818a91;"></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Address</strong></td>
-                            <td><strong>Home Town</strong></td>
-                            <td><strong>Country Of Origin</strong></td>
-                        </tr>
-                        <tr>
-                            <td style="color: #818a91;">13, ONANUBI STREET, OFF JONATHAN COKER ROAD, NEW OKO OBA, AGEGE</td>
-                            <td style="color: #818a91;">IDO</td>
-                            <td style="color: #818a91;">Nigeria</td>
+                            <td class="text-muted">{{$applicant->address_of_residence}}</td>
+                            <td class="text-muted">{{$applicant->stateOfOrigin->name}}</td>
+                            <td class="text-muted">{{$applicant->lgaOfOrigin->name}}</td>
                         </tr>
                         </tbody>
                     </table>
@@ -169,4 +159,8 @@
         </div>
     </div>
 </div>
+@endsection
+
+@section('scripts')
+
 @endsection

@@ -19,6 +19,6 @@ class ApplicantsDashboardController extends Controller
         
         $applicant = Applicant::find($id)->first();
         
-        return view('applicants.dashboard')->with(['applicant', $applicant]);
+        return view('applicants.dashboard')->with('applicant', $applicant);
     }
 }

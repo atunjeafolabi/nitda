@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-@include("partials._section", ["action" => "APPLICANTS NEW REGISTRATION"])
+@include("partials._section", ["action" => "CHANGE YOUR PASSWORD"])
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
