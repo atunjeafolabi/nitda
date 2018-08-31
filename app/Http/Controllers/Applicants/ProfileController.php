@@ -4,7 +4,9 @@ namespace App\Http\Controllers\Applicants;
 
 use App\Applicant;
 use App\Http\Controllers\Controller;
+use App\Lga;
 use App\Rules\OldPasswordRule;
+use App\State;
 use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -16,20 +18,23 @@ class ProfileController extends Controller
     
     public function showEditForm() {
         
+        $states = State::all();
+        $lgas = Lga::all();
+        
         $id = Auth::guard('applicant')->user()->id;
         $applicant = Applicant::find($id)->first();
         
-        return view('applicants.profile.edit')->with('applicant', $applicant);
+        return view('applicants.profile.edit')->with(['applicant' => $applicant, 'states' => $states, 'lgas' => $lgas]);
     }
     
     public function edit(Request $request) {
         
         $id = Auth::guard('applicant')->user()->id;
         $applicant = Applicant::find($id)->first();
-        $this->validate($request, [
-            'firstname' => 'required|string|max:255',
-            'lastname' => 'required|string|max:255',
-        ]);
+        
+        $rules = Applicant::validationRules();
+        unset($rules['email']); unset($rules['password']); //remove email and password rules from array
+        $this->validate($request, $rules);
         
         $applicant->update($request->all());
         

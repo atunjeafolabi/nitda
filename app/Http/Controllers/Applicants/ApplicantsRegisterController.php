@@ -60,21 +60,7 @@ class ApplicantsRegisterController extends Controller
      */
     protected function validator(array $data)
     {   
-        return Validator::make($data, [
-            'firstname' => 'required|alpha_dash|max:255',
-            'lastname' => 'required|alpha_dash|max:255',
-            'othername' => 'nullable|alpha_dash|max:255',
-            'sex'   => 'required',
-            'lga_of_residence' => 'required',
-            'state_of_residence' => 'required',
-            'origin_state' => 'required',
-            'origin_lga' => 'required',
-            'dob' => 'required',
-            'phone' => 'required|numeric|digits:11',
-            'address_of_residence' => 'required|string|max:255',
-            'email' => 'required|email|max:255|unique:applicants',
-            'password' => 'required|string|min:6|confirmed',
-        ]);
+        return Validator::make($data, Applicant::validationRules());
     }
 
     /**
@@ -104,10 +90,6 @@ class ApplicantsRegisterController extends Controller
      */
     public function register(Request $request)
     {        
-//        if(!$request->sex){
-//            $request->sex = '';
-//        }
-        
         $this->validator($request->all())->validate();
 
         //Generate Random Email Activation Token and append it to formDataArray

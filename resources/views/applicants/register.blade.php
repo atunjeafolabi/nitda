@@ -87,7 +87,7 @@
                                 @endif
                             </div>
                         </div> 
-                        <?php $lgaArray = [1=>'ifelodun',2=>'ajeromi'] ?>
+
                         <div class="form-group row">
                             <label for="origin_lga" class="col-md-4 col-form-label text-md-right">{{ __('Origin LGA') }}</label>
 

@@ -93,7 +93,7 @@
                         <tr>
                             <td class='text-muted'>{{$applicant->lastname}}</td>
                             <td class='text-muted'>{{$applicant->firstname}}</td>
-                            <td class='text-muted'>IBUKUN</td>
+                            <td class='text-muted'>{{$applicant->othername}}</td>
                         </tr>
                         <tr>
                             <td><strong>Sex</strong></td>
@@ -108,12 +108,12 @@
                         <tr>
                             <td><strong>Phone No.</strong></td>
                             <td><strong>State Of Origin</strong></td>
-                            <td><strong>LGA</strong></td>
+                            <td><strong>LGA of Origin</strong></td>
                         </tr>
                         <tr>
                             <td class="text-muted">{{$applicant->phone}}</td>
-                            <td class="text-muted">{{$applicant->stateOfResidence->name}}</td>
-                            <td class="text-muted">{{$applicant->lgaOfResidence->name}}</td>
+                            <td class="text-muted">{{$applicant->stateOfOrigin->name}}</td>
+                            <td class="text-muted">{{$applicant->lgaOfOrigin->name}}</td>
                         </tr>
                         <tr>
                             <th>Residential Address</th>
@@ -122,8 +122,8 @@
                         </tr>
                         <tr>
                             <td class="text-muted">{{$applicant->address_of_residence}}</td>
-                            <td class="text-muted">{{$applicant->stateOfOrigin->name}}</td>
-                            <td class="text-muted">{{$applicant->lgaOfOrigin->name}}</td>
+                            <td class="text-muted">{{$applicant->stateOfResidence->name}}</td>
+                            <td class="text-muted">{{$applicant->lgaOfResidence->name}}</td>
                         </tr>
                         </tbody>
                     </table>
