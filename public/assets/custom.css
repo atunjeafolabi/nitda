@@ -35,10 +35,22 @@ section {
 }
 .sub-header{
     padding-bottom: 0px;
+    background: #fafafa url("images/green-sub-banner.jpg"); 
+    background-size:cover;
 }
 .job-form-section.job-form-section--image {
     background: center center url(images/bg2.jpg) no-repeat;
     background-size: cover;
+}
+.job-form-box {
+    box-shadow: -3px 0px 4px 0px #838383, -2px 8px 17px 1px #838383;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.text-shadow {
+  color: #2c2c2c;
+  letter-spacing: .05em;
+  text-shadow: 2px 2px 0px #d5d5d5, 5px 2px 0px rgba(0, 0, 0, 0.03);
 }
 /**Dashboard Statbox Widget**/
 .statbox{

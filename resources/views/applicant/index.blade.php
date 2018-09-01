@@ -5,32 +5,11 @@
     <section class="job-form-section job-form-section--image">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
+          <div class="col-lg-6">
             <div class="job-form-box">
-              <h2 class="heading"><span class="accent">APPLICATION</span> PORTAL</h2>
-              <h3>NATIONAL INFORMATION TECHNOLOGY DEVELOPMENT AGENCY</h3>
+              <h2 class="heading text-shadow"><span class="accent">APPLICATION</span> PORTAL</h2>
+              <h4>NATIONAL INFORMATION TECHNOLOGY DEVELOPMENT AGENCY</h4>
               <h5 class='center'>Search Jobs</h5>
-              <form id="job-main-form" method="get" action="#" class="job-main-form">
-                <div class="controls">
-                  <div class="row align-items-center">
-                    <div class="col-md-5">
-                      <div class="form-group">
-                        <label for="profession">Profession</label>
-                        <input type="text" id="profession" name="profession" placeholder="Profession you are looking for" class="form-control">
-                      </div>
-                    </div>
-                    <div class="col-md-5">
-                      <div class="form-group">
-                        <label for="location">Location</label>
-                        <input type="text" id="location" name="location" placeholder="Any particular location?" class="form-control">
-                      </div>
-                    </div>
-                    <div class="col-md-2">
-                      <button type="submit" name="submit" class="btn btn-outline-white-primary job-main-form__button"><i class="fa fa-search"></i></button>
-                    </div>
-                  </div>
-                </div>
-              </form>
             </div>
           </div>
         </div>
@@ -107,19 +86,6 @@
               <div class="job__star"><a href="#" data-toggle="tooltip" data-placement="top" title="Save to favourites" class="job__star__link"><i class="fa fa-star"></i></a></div>
             </div>
           </div>
-        </div>
-        <div class="pages">
-          <p class="load-more"><a href="#" class="mb-4 btn btn-outline-white-primary"><i class="fa fa-chevron-down"> </i>Load more</a></p>
-          <nav aria-label="Page navigation example" class="d-flex justify-content-center mt-4 mb-4">
-            <ul class="pagination">
-              <li class="page-item"><a href="#" aria-label="Previous" class="page-link"><span aria-hidden="true">«</span><span class="sr-only">Previous</span></a></li>
-              <li class="page-item active"><a href="#" class="page-link">1</a></li>
-              <li class="page-item"><a href="#" class="page-link">2</a></li>
-              <li class="page-item"><a href="#" class="page-link">3</a></li>
-              <li class="page-item"><a href="#" class="page-link">4</a></li>
-              <li class="page-item"><a href="#" aria-label="Next" class="page-link"><span aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>
-            </ul>
-          </nav>
         </div>
       </div>
     </section>
