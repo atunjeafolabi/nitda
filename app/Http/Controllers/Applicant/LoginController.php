@@ -7,6 +7,8 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
+use App\Applicant;
+
 class LoginController extends Controller
 {
     /*
@@ -50,6 +52,16 @@ class LoginController extends Controller
     public function login(Request $request)
     {
         $this->validateLogin($request);
+        
+        $applicant = Applicant::where('email', $request->email)->first();
+        
+        //If user exists, check if email has been confirmed
+        if($applicant){
+            if($applicant->status == 0){
+                $request->session()->flash('danger-msg', 'You have not confirmed your account. Check Your Email And Click on the Link Sent To You.');
+                return redirect()->route('applicant.login');
+            }
+        }
 
         if ($this->attemptLogin($request)) {
             return $this->sendLoginResponse($request);
