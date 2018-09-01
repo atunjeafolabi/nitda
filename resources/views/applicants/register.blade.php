@@ -6,7 +6,10 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+                <div class="card-header">
+                    {{ __('Register') }}
+                    <span class="pull-right">Already Registered? <a href="{{route('applicant.login')}}"><strong>Login</strong></a></span>
+                </div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('applicant.register') }}" aria-label="{{ __('Register') }}">
@@ -219,6 +222,7 @@
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Register') }}
                                 </button>
+                                <span class="pull-right">Already Registered? <a href="{{route('applicant.login')}}"><strong>Login</strong></a></span>
                             </div>
                         </div>
                     </form>

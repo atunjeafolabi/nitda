@@ -65,7 +65,7 @@
                 @else
                     <li class="nav-item dropdown">
                         <a id="clientZone" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">
-                            Login
+                            Login / Register
                         </a>
                         <div aria-labelledby="clientZone" class="dropdown-menu">
                             <a href="{{route("applicant.login")}}" class="dropdown-item">Login</a>
@@ -100,10 +100,12 @@
             <div class="col-lg-3 col-md-6 mb-5">
               <h4 class="h5">USEFUL LINKS</h4>
               <ul class="list-unstyled">
-                <li><a href="client-register.html">Login or Register</a></li>
-                <li><a href="client-dashboard.html">Dashboard</a></li>
-                <li><a href="client-applicants.html">Applicants</a></li>
-                <li><a href="client-job.html">Post a new job</a></li>
+                @if(!Auth::guard('applicant')->check())
+                <li><a href="{{route('applicant.login')}}">Login or Register</a></li>
+                @endif
+                <li><a href="{{route('applicant.dashboard')}}">Dashboard</a></li>
+                <li><a href="{{route('applicant.profile.edit')}}">Edit Profile</a></li>
+                <li><a href="{{route('index')}}">Home</a></li>
               </ul>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
