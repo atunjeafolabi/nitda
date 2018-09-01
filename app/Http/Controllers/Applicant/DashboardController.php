@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Applicants;
+namespace App\Http\Controllers\Applicant;
 
 use App\Applicant;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 
-class ApplicantsDashboardController extends Controller
+class DashboardController extends Controller
 {
     /**
      * Show the application dashboard.
@@ -19,6 +19,6 @@ class ApplicantsDashboardController extends Controller
         
         $applicant = Applicant::find($id)->first();
         
-        return view('applicants.dashboard')->with('applicant', $applicant);
+        return view('applicant.dashboard')->with('applicant', $applicant);
     }
 }

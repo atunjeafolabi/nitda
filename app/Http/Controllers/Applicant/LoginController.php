@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\Applicants;
+namespace App\Http\Controllers\Applicant;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-class ApplicantsLoginController extends Controller
+class LoginController extends Controller
 {
     /*
     |--------------------------------------------------------------------------
@@ -45,7 +45,7 @@ class ApplicantsLoginController extends Controller
      */
     public function showLoginForm()
     {
-        return view('applicants.login');
+        return view('applicant.login');
     }
     public function login(Request $request)
     {

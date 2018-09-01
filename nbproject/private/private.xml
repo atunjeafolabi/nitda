@@ -3,13 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp64/www/nitda/app/State.php</file>
-            <file>file:/C:/wamp64/www/nitda/app/Lga.php</file>
             <file>file:/C:/wamp64/www/nitda/app/Applicant.php</file>
             <file>file:/C:/wamp64/www/nitda/app/Http/Controllers/Applicants/ApplicantsRegisterController.php</file>
+            <file>file:/C:/wamp64/www/nitda/resources/views/applicants/login.blade.php</file>
+            <file>file:/C:/wamp64/www/nitda/resources/views/partials/_section.blade.php</file>
             <file>file:/C:/wamp64/www/nitda/resources/views/applicants/dashboard.blade.php</file>
             <file>file:/C:/wamp64/www/nitda/resources/views/applicants/register.blade.php</file>
             <file>file:/C:/wamp64/www/nitda/resources/views/partials/_alert.blade.php</file>
+            <file>file:/C:/wamp64/www/nitda/app/Http/Controllers/Applicants/ProfileController.php</file>
+            <file>file:/C:/wamp64/www/nitda/resources/views/layouts/app.blade.php</file>
+            <file>file:/C:/wamp64/www/nitda/resources/views/applicants/profile/edit.blade.php</file>
+            <file>file:/C:/wamp64/www/nitda/routes/web.php</file>
         </group>
     </open-files>
 </project-private>

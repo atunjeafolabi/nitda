@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Applicants;
+namespace App\Http\Controllers\Applicant;
 
 use App\Applicant;
 use App\Http\Controllers\Controller;
@@ -16,7 +16,7 @@ use Carbon\Carbon;
 use App\State;
 use App\Lga;
 
-class ApplicantsRegisterController extends Controller
+class RegisterController extends Controller
 {
     /*
     |--------------------------------------------------------------------------
@@ -79,7 +79,7 @@ class ApplicantsRegisterController extends Controller
         $states = State::all();
         $lgas = Lga::all();
 
-        return view('applicants.register')->with(['states' => $states, 'lgas' => $lgas]);
+        return view('applicant.register')->with(['states' => $states, 'lgas' => $lgas]);
     }
     
     /**
@@ -117,7 +117,7 @@ class ApplicantsRegisterController extends Controller
             $message = 'Unable to Register. Please kindly try again!';
         }
         
-        return view('applicants.registration-confirmation')->with(['applicant' => $applicant, 'message' => $message]);
+        return view('applicant.registration-confirmation')->with(['applicant' => $applicant, 'message' => $message]);
     }
     
     public function sendEmailConfirmation($applicant, $email_activation_token) {

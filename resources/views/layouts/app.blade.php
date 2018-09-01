@@ -100,11 +100,13 @@
             <div class="col-lg-3 col-md-6 mb-5">
               <h4 class="h5">USEFUL LINKS</h4>
               <ul class="list-unstyled">
-                @if(!Auth::guard('applicant')->check())
-                <li><a href="{{route('applicant.login')}}">Login or Register</a></li>
-                @endif
+                @if(Auth::guard('applicant')->check())
                 <li><a href="{{route('applicant.dashboard')}}">Dashboard</a></li>
                 <li><a href="{{route('applicant.profile.edit')}}">Edit Profile</a></li>
+                @else
+                <li><a href="{{route('applicant.login')}}">Login</a></li>
+                <li><a href="{{route('applicant.register')}}">Register</a></li>
+                @endif
                 <li><a href="{{route('index')}}">Home</a></li>
               </ul>
             </div>

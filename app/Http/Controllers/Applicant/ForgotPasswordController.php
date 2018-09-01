@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Applicants;
+namespace App\Http\Controllers\Applicant;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
 use Illuminate\Support\Facades\Password;
 
-class ApplicantsForgotPasswordController extends Controller
+class ForgotPasswordController extends Controller
 {
     /*
     |--------------------------------------------------------------------------
@@ -37,7 +37,7 @@ class ApplicantsForgotPasswordController extends Controller
      */
     public function showLinkRequestForm()
     {
-        return view('applicants.passwords.email');
+        return view('applicant.passwords.email');
     }
 
     /**

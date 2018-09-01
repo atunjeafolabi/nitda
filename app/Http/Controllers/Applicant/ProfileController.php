@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Applicants;
+namespace App\Http\Controllers\Applicant;
 
 use App\Applicant;
 use App\Http\Controllers\Controller;
@@ -24,7 +24,7 @@ class ProfileController extends Controller
         $id = Auth::guard('applicant')->user()->id;
         $applicant = Applicant::find($id)->first();
         
-        return view('applicants.profile.edit')->with(['applicant' => $applicant, 'states' => $states, 'lgas' => $lgas]);
+        return view('applicant.profile.edit')->with(['applicant' => $applicant, 'states' => $states, 'lgas' => $lgas]);
     }
     
     public function edit(Request $request) {
@@ -44,7 +44,7 @@ class ProfileController extends Controller
     }
     
     public function showChangePasswordForm(){
-        return view('applicants.profile.changePassword');
+        return view('applicant.profile.changePassword');
     }
     
     public function changePassword(Request $request) {
