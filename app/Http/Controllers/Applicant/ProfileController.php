@@ -22,7 +22,7 @@ class ProfileController extends Controller
         $lgas = Lga::all();
         
         $id = Auth::guard('applicant')->user()->id;
-        $applicant = Applicant::find($id)->first();
+        $applicant = Applicant::find($id);
         
         return view('applicant.profile.edit')->with(['applicant' => $applicant, 'states' => $states, 'lgas' => $lgas]);
     }
@@ -30,7 +30,7 @@ class ProfileController extends Controller
     public function edit(Request $request) {
         
         $id = Auth::guard('applicant')->user()->id;
-        $applicant = Applicant::find($id)->first();
+        $applicant = Applicant::find($id);
         
         $rules = Applicant::validationRules();
         unset($rules['email']); unset($rules['password']); //remove email and password rules from array

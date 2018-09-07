@@ -17,7 +17,7 @@ class DashboardController extends Controller
     {
         $id = Auth::guard('applicant')->user()->id;
         
-        $applicant = Applicant::find($id)->first();
+        $applicant = Applicant::find($id);
         
         return view('applicant.dashboard')->with('applicant', $applicant);
     }

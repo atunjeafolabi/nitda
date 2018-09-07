@@ -53,8 +53,8 @@ class LoginController extends Controller
     {
         $this->validateLogin($request);
         
-        $applicant = Applicant::where('email', $request->email)->first();
-        
+        $applicant = Applicant::where(['email' => $request->email])->first();
+
         //If user exists, check if email has been confirmed
         if($applicant){
             if($applicant->status == 0){
