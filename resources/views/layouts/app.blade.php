@@ -37,6 +37,7 @@
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    @yield('styles')
 </head>
 <body>
     <!--<div id="app">-->
@@ -61,7 +62,7 @@
                             <a href="{{route('applicant.profile.changePassword')}}" class="dropdown-item">Change Password</a>
                         </div>
                     </li>
-                    <li class="nav-item"><a href="{{route("applicant.logout")}}" class="nav-link">Logout({{Auth::guard('applicant')->user()->fullname}})</a></li>
+                    <li class="nav-item"><a href="{{route("applicant.logout")}}" class="nav-link">Logout({{Auth::guard('applicant')->user()->firstname}})</a></li>
                 @else
                     <li class="nav-item dropdown">
                         <a id="clientZone" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">

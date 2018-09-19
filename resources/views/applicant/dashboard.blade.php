@@ -12,7 +12,7 @@
                     </div>
                     <div class="title">Academic Records</div>
                     <div class="value">1</div>
-                    <a class="more pull-right" href="http://careers.ikejaelectric.com/ie/applicant/my-profile/academics">View <i class="pull-right icon-angle-right"></i></a>
+                    <a class="more pull-right" href="{{route('academic-records.index')}}">View <i class="pull-right icon-angle-right"></i></a>
                 </div>
             </div>
             <!-- /.smallstat -->
@@ -27,7 +27,7 @@
                     </div>
                     <div class="title">Certification</div>
                     <div class="value">0</div>
-                    <a class="more pull-right" href="http://careers.ikejaelectric.com/ie/applicants/my-profile/certifications">View <i class="pull-right icon-angle-right"></i></a>
+                    <a class="more pull-right" href="#">View <i class="pull-right icon-angle-right"></i></a>
                 </div>
             </div>
             <!-- /.smallstat -->
@@ -40,10 +40,10 @@
                     <div class="visual btn-warning">
                         <i class="fa fa-briefcase"></i>
                     </div>
-                    <div class="title">Competency</div>
-                    <div class="value">7</div>
+                    <div class="title">NYSC</div>
+                    <div class="value">0</div>
                     
-                    <a class="more pull-right" href="http://careers.ikejaelectric.com/ie/applicants/my-profile/skills">View <i class="pull-right icon-angle-right"></i></a>
+                    <a class="more pull-right" href="#">View <i class="pull-right icon-angle-right"></i></a>
                 </div>
             </div>
             <!-- /.smallstat -->
@@ -57,7 +57,7 @@
                     </div>
                     <div class="title">Work Experience</div>
                     <div class="value">3</div>
-                    <a class="more pull-right" href="http://careers.ikejaelectric.com/ie/applicants/my-profile/work-experience">View <i class="pull-right icon-angle-right"></i></a>
+                    <a class="more pull-right" href="#">View <i class="pull-right icon-angle-right"></i></a>
                 </div>
             </div>
             <!-- /.smallstat -->
@@ -137,9 +137,9 @@
             </div>
             <!-- Job item -->
             <div class="col-xs-12">
-                <a class="item-block" href="http://careers.ikejaelectric.com/ie/applicant/job-application/view/57">
+                <a class="item-block" href="{{route('job.show', 2)}}">
                     <header>
-                        <img src="http://careers.ikejaelectric.com/img/job.png" alt="">
+                        <img src="#" alt="">
                         <div class="hgroup">
                             <h4>FRONT DESK RECEPTIONIST</h4>
                             <h5>N-2018-08-15933753614</h5>
@@ -154,7 +154,7 @@
             <!-- END Job item -->
             <div class="pull-right">
                 <hr>
-                <a class="btn btn-success" href="http://careers.ikejaelectric.com/ie/applicant/job-application">View All</a>
+                <a class="btn btn-success" href="{{route('index')}}">View All</a>
             </div>
         </div>
     </div>

@@ -81,4 +81,9 @@ class Applicant extends Authenticatable
     {
         return $this->belongsTo('App\Lga', 'origin_lga');
     }
+
+    public function oLevelRecords()
+    {
+        return $this->hasMany('App\OLevelRecord', 'applicants_id');
+    }
 }

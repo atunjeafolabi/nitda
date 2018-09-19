@@ -3,20 +3,21 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp64/www/nitda/app/Http/Controllers/Applicant/IndexController.php</file>
+            <file>file:/C:/wamp64/www/nitda/resources/views/applicant/job/show.blade.php</file>
             <file>file:/C:/wamp64/www/nitda/app/Http/Controllers/Applicant/RegisterController.php</file>
-            <file>file:/C:/wamp64/www/nitda/app/Http/Controllers/Applicant/ForgotPasswordController.php</file>
-            <file>file:/C:/wamp64/www/nitda/app/Http/Middleware/ApplicantsMiddleware.php</file>
-            <file>file:/C:/wamp64/www/nitda/resources/views/partials/_section.blade.php</file>
-            <file>file:/C:/wamp64/www/nitda/app/Http/Controllers/Applicant/ResetPasswordController.php</file>
+            <file>file:/C:/wamp64/www/nitda/app/Http/Controllers/Applicant/JobController.php</file>
             <file>file:/C:/wamp64/www/nitda/app/Http/Controllers/Applicant/DashboardController.php</file>
+            <file>file:/C:/wamp64/www/nitda/app/OLevelRecord.php</file>
             <file>file:/C:/wamp64/www/nitda/resources/views/partials/_alert.blade.php</file>
             <file>file:/C:/wamp64/www/nitda/resources/views/applicant/dashboard.blade.php</file>
             <file>file:/C:/wamp64/www/nitda/routes/web.php</file>
-            <file>file:/C:/wamp64/www/nitda/app/Http/Controllers/Applicant/LoginController.php</file>
+            <file>file:/C:/wamp64/www/nitda/app/Http/Controllers/Applicant/AcademicRecordsController.php</file>
             <file>file:/C:/wamp64/www/nitda/resources/views/applicant/login.blade.php</file>
             <file>file:/C:/wamp64/www/nitda/app/Applicant.php</file>
+            <file>file:/C:/wamp64/www/nitda/config/filesystems.php</file>
             <file>file:/C:/wamp64/www/nitda/resources/views/applicant/profile/edit.blade.php</file>
+            <file>file:/C:/wamp64/www/nitda/resources/views/applicant/academic-records/index.blade.php</file>
+            <file>file:/C:/wamp64/www/nitda/public/assets/custom.css</file>
             <file>file:/C:/wamp64/www/nitda/resources/views/layouts/app.blade.php</file>
             <file>file:/C:/wamp64/www/nitda/resources/views/applicant/register.blade.php</file>
             <file>file:/C:/wamp64/www/nitda/app/Http/Controllers/Applicant/ProfileController.php</file>
