@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-@include("partials._section", ["action" => "EXISTING APPLICANTS - Login"])
+@include("partials._section", ["action" => "EXISTING APPLICANTS"])
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">

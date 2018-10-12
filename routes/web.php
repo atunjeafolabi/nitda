@@ -49,6 +49,10 @@ Route::group(['middleware' => ['web']], function () {
             Route::get('academic-records', 'Applicant\AcademicRecordsController@index')->name('academic-records.index');
             Route::post('academic-records/add-olevel', 'Applicant\AcademicRecordsController@addOLevel')->name('academic-records.addOLevel');
             Route::delete('academic-records/delete-olevel/{id}', 'Applicant\AcademicRecordsController@deleteOLevel')->name('academic-records.deleteOLevel');
+            Route::delete('academic-records/delete-tertiary-info/{id}', 'Applicant\AcademicRecordsController@deleteTertiaryInfo')->name('academic-records.deleteTertiaryInfo');
+            
+            Route::post('academic-records/add-tertiary-info', 'Applicant\AcademicRecordsController@addTertiaryInfo')->name('academic-records.addTertiaryInfo');
+            
             
             //Job Routes
             Route::get('job/{job_id}','Applicant\JobController@show')->name('job.show');

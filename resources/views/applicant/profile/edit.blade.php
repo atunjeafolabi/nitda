@@ -256,7 +256,7 @@
         
         lgas.forEach(function (lga) {
 
-            if(lga.state_id == selected_state_id){
+            if(lga.states_id == selected_state_id){
                 var select = (oldLGA==lga.id ? 'selected' : '');
                 lgaElement.append("<option value='" + lga.id + "'" + select + ">" + lga.name + "</option>");
             }
